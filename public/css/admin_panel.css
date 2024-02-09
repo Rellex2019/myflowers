@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+    text-decoration: none;
+    color: black;
+}
+body {
+  width: 1920px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.reg_cont {
+  width: 100vw;
+  height: 920px;
+  background-color: #e8d4c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont_reg{
+  width: 662px;
+  height: 704px;
+}
+.reg_text {
+  font-family: Bellota_Bold;
+  font-size: 32px;
+  margin-top: 170px;
+}

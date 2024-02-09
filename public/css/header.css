@@ -1,0 +1,103 @@
+.header_cont {
+  width: 100vw;
+  height: 120px;
+  background-color: rgba(233, 201, 186, 0.8);
+  box-shadow: rgba(233, 201, 186, 0.4) 0px 1px 20px 0px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+    z-index: 100;
+}
+.header {
+  padding-top: 28px;
+  height: 109px;
+  display: flex;
+  flex-direction: row;
+
+}
+.logo_svg {
+  height: 70px;
+  margin-top: -5px;
+}
+.text_header {
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: Marck Script;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  margin-left: 320px;
+  margin-top: 10px;
+}
+.text_menu {
+  margin-left: 56px;
+  font-family: Marck Script;
+}
+.icon_cont {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.cart {
+    height: 50px;
+}
+.user {
+    height: 50px;
+    margin-left: 21px;
+}
+.popup{
+    position: fixed;
+    top: 120px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+.popup_body{
+    position: relative;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.sign_up{
+    font-size:40px ;
+    font-family: Marck Script;
+    width: 290px;
+    border-radius: 0;
+    margin-top: 0px;
+    height: 70px;
+    background-color:rgba(233, 201, 186, 0.8);
+    border: 0px;
+}
+.login{
+    font-size:40px ;
+    font-family: Marck Script;
+    width: 290px;
+    height: 70px;
+    border-radius: 0;
+    margin-top: 0px;
+    background-color:rgba(233, 201, 186, 0.8);
+    border: 0px;
+}
+.exit_btn{
+    font-size:40px ;
+    font-family: Marck Script;
+    width: 290px;
+    height: 70px;
+    border-radius: 0;
+    margin-top: 0px;
+    background-color:rgba(233, 201, 186, 0.8);
+    border: 0px;
+}
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+.popupu_close{
+    right: 0;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+}

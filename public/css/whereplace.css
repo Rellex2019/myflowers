@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+.whereplace_cont{
+    width: 100vw;
+    height: 1239px;
+    background-color: #FCF4F0;
+    display: flex;
+    justify-content: center;
+}
+.cont_info{
+    width: 1452px;
+}
+.main_text{
+    font-size: 50px;
+    font-family: Bellota_Bold;
+    padding-top: 160px;
+}
+.cont_contacts{
+    display: flex;
+    flex-direction: row;
+}
+.col_contacts{
+    font-size: 24px;
+    font-family: Bellota_Bold;
+}
+#col_contacts{
+    margin-top: 32px;
+    margin-bottom: 15px;
+}
+#row_contacts{
+    margin-left: 206px;
+}
+.cont_map{
+    width: 1107px;
+    height: 652px;
+    margin-top: 55px;
+}

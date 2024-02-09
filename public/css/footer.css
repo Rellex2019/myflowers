@@ -1,0 +1,124 @@
+.footer_cont {
+  padding-top: 78px;
+  width: 100vw;
+  height: 350px;
+  background-color: #e6dfd8;
+  overflow: hidden;
+}
+.footer {
+  position: relative;
+  width: 100vw;
+  height: 273px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 2;
+}
+.col_foo {
+  display: flex;
+  flex-direction: column;
+}
+.row_foo {
+  margin-top: 21px;
+  height: 20px;
+  width: 400px;
+  font-family: Bellota_Bold;
+  font-size: 20px;
+}
+.row_foo2 {
+  margin-top: 21px;
+  height: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  font-family: Bellota;
+}
+.row_foo3 {
+  margin-top: 21px;
+  height: 20px;
+  width: 400px;
+  text-align: end;
+  font-family: Bellota_Bold;
+  font-size: 20px;
+}
+.logo_svg_foo {
+  margin-top: 16px;
+}
+#svg_foo {
+  display: flex;
+  flex-direction: row;
+}
+.svg_vk {
+  background-image: url(/elems/svg/VK.svg);
+  width: 37px;
+  height: 23px;
+}
+.svg_youtube {
+  background-image: url(/elems/svg/youtube.svg);
+  width: 34px;
+  height: 25px;
+  margin-left: 12px;
+}
+.svg_telegram {
+  background-image: url(/elems/svg/telegram.svg);
+  width: 29px;
+  height: 27px;
+  margin-left: 12px;
+}
+#svg_foo2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.svg_visa {
+  background-image: url(/elems/svg/visa.svg);
+  width: 58px;
+  height: 31px;
+}
+.svg_mir {
+  background-image: url(/elems/svg/mir.svg);
+  width: 64px;
+  height: 34px;
+  margin-left: 12px;
+}
+.svg_mastercard {
+  background-image: url(/elems/svg/mastercard.svg);
+  width: 39px;
+  height: 20px;
+  margin-left: 12px;
+  margin-top: 6px;
+}
+.svg_sber {
+  background-image: url(/elems/svg/sber.svg);
+  width: 61px;
+  height: 21px;
+  margin-left: 12px;
+  margin-top: 6px;
+}
+.corp {
+  display: flex;
+  justify-content: center;
+  font-family: Bellota_Bold;
+  font-size: 20px;
+}
+.list1_foo {
+  z-index: 1;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -200px;
+  transform: rotate(300deg);
+}
+.list2_foo {
+  position: absolute;
+  right: 0;
+  margin-top: -150px;
+  margin-right: -200px;
+  transform: scale(-1, 1);
+}
+.decor {
+  position: absolute;
+  margin-top: -78px;
+  height: 428px;
+  width: 100vw;
+  overflow: hidden;
+}

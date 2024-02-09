@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+    text-decoration: none;
+    color: black;
+}
+body {
+  width: 1920px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.begin {
+  width: 100vw;
+  min-height: 968px;
+  background-image: url(/elems/first_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header_cont {
+  width: 100vw;
+  height: 120px;
+  background-color: rgba(233, 201, 186, 0.4);
+  box-shadow: rgba(233, 201, 186, 0.4) 0px 1px 20px 0px;
+}
+.slogan {
+  color: black;
+  padding-top: 250px;
+  font-family: Marck Script;
+  font-size: 128px;
+  letter-spacing: 0px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.r2 {
+  margin-left: 500px;
+}
+.proposal {
+  position: relative;
+  width: 100vw;
+  height: 1365px;
+  background-color: #e6dfd8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list1 {
+  z-index: 1;
+  left: 0;
+  position: absolute;
+}
+.list2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+.offer {
+  font-family: Marck Script;
+  font-size: 64px;
+  padding-top: 153px;
+}
+.cont_propo {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 770px;
+  width: 1415px;
+  margin-top: 40px;
+}
+.block_preim{
+  width: 1920px;
+}
+.col {
+  display: flex;
+  flex-direction: row;
+}
+#col {
+  margin-top: 30px;
+}
+.row {
+  overflow: hidden;
+  width: 450px;
+  height: 370px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+#row {
+  margin-left: 30px;
+}
+.cont_prem{
+  width: 1920px;
+}
+.preim {
+  background-color: #F4E3DC;
+  position: absolute;
+  bottom: 0;
+  width: 960px;
+  height: 156px;
+  z-index: 1;
+}
+.cont_text_prem{
+  display: flex;
+  justify-content: center;
+}
+.text_preim {
+  position: relative;
+  font-family: Marck Script;
+  font-size: 64px;
+  margin-top: 210px;
+  z-index: 2;
+}
+.cont_block_prem{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  background-color: rgba(233, 201, 186, 0.51);
+}
+.col1 {
+  display: flex;
+  flex-direction: row;
+}
+.row1 {
+  overflow: hidden;
+  width: 960px;
+  height: 460px;
+}
+.text {
+  padding-top: 150px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #625f3c;
+  text-align: center;
+  font-family: Bellota;
+}
+.catalog_btn{
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(233, 201, 186, 0.70);
+    text-align: center;
+    font-size: 60px;
+    font-family: Marck Script;
+    padding-top: 26px;
+}

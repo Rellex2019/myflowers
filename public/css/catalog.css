@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+    text-decoration: none;
+    color: black;
+}
+body {
+  width: 1920px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.catalog_cont{
+    min-height: 960px;
+    width: 100vw;
+    font-family: Bellota_Bold;
+    font-size: 50px;
+    background-color: #E6DFD8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog_text{
+    margin-top: 37px;
+    padding-top: 130px;
+}
+.filters{
+    margin-bottom: 20px;
+    width: 1440px;
+    font-size: 24px;
+    display: flex;
+}
+.filter{
+    display: flex;
+    margin-right: 18px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin-left: 4px;
+}
+.slider{
+    min-height: 550px;
+    font-size: 60px;
+    width: 1493px;
+    display: flex;
+    font-size: 24px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 500px;
+    border: 0px;
+    border-radius:23px 23px 23px 23px ;
+    padding-right: 43px;
+    margin-top: 40px;
+}
+.img_last{
+    width: 330px;
+    height: 287px;
+    border: 0px;
+    border-radius:23px 23px 23px 23px ;
+}
+.cont_context{
+    width: 254px;
+    height: 200px;
+}
+.new_price{
+    font-size: 24px;
+    margin-top: 20px;
+}
+.new_text{
+    font-size: 24px;
+    margin-top: 20px;
+}
+.new_btn{
+    font-family: Bellota_Bold;
+    margin-top: 40px;
+    font-size: 24px;
+    width: 184px;
+    height: 52px;
+    border: 0px;
+    border-radius: 43px 43px 43px 43px ;
+    display: flex;
+}
+.btn_cont{
+    display: flex;
+}

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+    text-decoration: none;
+    color: black;
+}
+body {
+  width: 1920px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.reg_cont {
+  width: 100vw;
+  height: 920px;
+  background-color: #e8d4c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont_reg{
+  width: 662px;
+  height: 704px;
+}
+.reg_text {
+  font-family: Bellota_Bold;
+  font-size: 32px;
+  margin-top: 230px;
+}
+.cont_form{
+  display: flex;
+  flex-direction: column;
+  font-family: Bellota_Bold;
+  font-size: 20px;
+}
+.input_name{
+  margin-top: 15px;
+}
+.data_input{
+  width: 660px;
+  height: 37px;
+  background-color: #E6DFD8;
+  border: 0px solid black;
+  border-radius: 25px;
+  padding-left: 10px;
+  margin-top: 11px;
+  color: black;
+  font-size: 20px;
+  font-family: Bellota_Bold;
+}
+.reg-log{
+  margin-top: 15px;
+  width: 670px;
+  height: 37px;
+  display: flex;
+}
+.left_block{
+  width: 420px;
+  background-color: #E6DFD8;
+  height: 37px;
+  border-radius: 20px 0px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.right_block{
+  width: 250px;
+  background-color: #625F3C;
+  height: 37px;
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.user_accept{
+  margin-top: 15px;
+}

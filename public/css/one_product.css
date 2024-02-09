@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+body {
+    width: 1920px;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.catalog_cont{
+    height: 1000px;
+    width: 100vw;
+    font-family: Bellota_Bold;
+    font-size: 50px;
+    background-color: #E6DFD8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog_text{
+    margin-top: 37px;
+    padding-top: 130px;
+}
+.filters{
+    width: 1440px;
+    font-size: 24px;
+    display: flex;
+}
+.filter{
+    display: flex;
+    margin-right: 18px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin-left: 4px;
+}
+.slider{
+    margin-top: 120px;
+    height: 823px;
+    font-size: 60px;
+    width: 100vw;
+    display: flex;
+    font-size: 24px;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.slide{
+    display: flex;
+    width: 1463px;
+    height: 538px;
+    border: 0px;
+    margin-top: 40px;
+}
+.img_last{
+    width: 560px;
+    height: 540px;
+    border: 0px;
+    border-radius:23px 23px 23px 23px ;
+}
+.cont_context{
+    margin-left: 103px;
+    width: 800px;
+    height: 530px;
+}
+.new_price{
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 47px;
+}
+.new_text{
+    font-size: 48px;
+}
+.new_btn{
+    font-family: Bellota_Bold;
+    font-size: 24px;
+    width: 184px;
+    height: 52px;
+    border: 0px;
+    border-radius: 43px 43px 43px 43px ;
+    display: flex;
+    justify-content: center;
+}
+.select_cont{
+    display: flex}
+.quantity_cont{
+    width: 125px;
+    height: 50px;
+    background-color: #E5D3CB;
+    border-radius: 43px 43px 43px 43px ;
+    margin-right: 45px;
+}
+.WeHave{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.title_description{
+    font-size: 32px;
+    font-family: Bellota_Bold;
+    margin-top: 46px;
+}
+.description{
+    margin-top: 26px;
+    font-size: 24px;
+    font-family: Bellota_Bold;
+}
+.btn_cont{
+}
