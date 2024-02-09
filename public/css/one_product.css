@@ -95,7 +95,6 @@ body {
     margin-right: 45px;
 }
 .WeHave{
-    margin-left: 40px;
     display: flex;
     align-items: center;
 }
@@ -110,4 +109,5 @@ body {
     font-family: Bellota_Bold;
 }
 .btn_cont{
+    margin-left: 40px;
 }

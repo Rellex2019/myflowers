@@ -78,7 +78,21 @@
         <div class="text_offer">Изменение, удаление товаров</div>
         <a href="{{route('product.list')}}"><input type="button" class="add_product" value="Список товаров"></a>
         <div class="text_offer">Добавление, удаление категорий</div>
-        <a href="{{route('product.list')}}"><input type="button" class="add_product" value="Список товаров"></a>
+
+      <form action="{{route('create.category')}}" method="POST" >
+          @csrf
+          <input name="name_category" placeholder="Введите категорию">
+          <input type="submit" class="add_product" value="Создать категорию">
+      </form>
+        <div class="categories">
+            @foreach($categories as $category)
+                <div class="category_cont"><div class="category">{{$category->name_category}}</div>
+                    <a href="/admin/delete_category/{{$category->id}}"> <input class="btn_del" type="button" value="Удалить"></a>
+                </div>
+            @endforeach
+        </div>
+
+
     </div>
     <div class="footer_cont">
         <div class="decor">

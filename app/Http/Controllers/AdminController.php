@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Post\AdminRequest;
+use App\Http\Requests\Post\CategoryRequest;
 use App\Http\Requests\Post\ChangeRequest;
 use App\Models\Category;
 use App\Models\Products;
@@ -18,7 +19,8 @@ class AdminController extends Controller
             abort(404);
         }
         else{
-            return view('admin');
+            $categories = Category::all();
+            return view('admin',compact('categories'));
         }
 
     }
@@ -42,7 +44,7 @@ class AdminController extends Controller
             $file = Storage::disk('public')->put("img", request()->image);
             $data['image'] = asset("storage/".$file);
             Products::create($data);
-            return redirect()->route('about_us.index');
+            return redirect()->route('catalog.index');
         }
 
     }
@@ -54,7 +56,8 @@ class AdminController extends Controller
         }
         else{
             $products = Products::all();
-            return view('catalog', compact('products'));
+            $categories = Category::all();
+            return view('catalog', compact('products','categories'));
             // Изменить так, что если $__Sesion = 1(то еть админ, тогда перекидывает в каталог и там появляются кнопки
             // удалить и редактировать рядорм с кнопкой заказать)
             // Надо сделать после регистрации входа
@@ -98,5 +101,31 @@ class AdminController extends Controller
             Products::all()->find($data['id'])->update($data);
             return redirect()->route('catalog.index');
         }
+    }
+
+    public function store_category(CategoryRequest $request)
+    {
+        if(session('isRole')!='admin')
+        {
+            abort(404);
+        }
+        else{
+            $data = $request->validated();
+            Category::create($data);
+            return redirect()->route('admin.index');
+        }
+
+    }
+    public function delete_category($id_category)
+    {
+        if(session('isRole')!='admin')
+        {
+            abort(404);
+        }
+        else{
+        Category::all()->find($id_category)->delete();
+        return redirect()->route('admin.index');
+
+    }
     }
 }

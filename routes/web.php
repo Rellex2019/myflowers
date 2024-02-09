@@ -72,3 +72,7 @@ Route::get('/admin/edit/{id_product}', 'AdminController@edit')
     ->name('product.edit');
 Route::post('/admin/change/', 'AdminController@change')
     ->name('edit.product');
+
+Route::post('/admin/create_category', 'AdminController@store_category')
+->name('create.category');
+Route::get('/admin/delete_category/{id_category}', 'AdminController@delete_category');

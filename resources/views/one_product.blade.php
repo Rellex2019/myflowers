@@ -119,17 +119,14 @@
                     <img src="{{$product->image}}" class="img_last">
                     <div class="cont_context">
                         <div class="new_text">{{$product->name}}</div>
-                        <div class="new_price">{{$product->price}}</div>
+                        <div class="new_price">{{$product->price}}Р</div>
+                        <div class="other">Категория: {{$product->category['name_category']}}</div>
                         <div class="select_cont">
-                            <div class="quantity_cont">
-                                <div class="plus"></div>
-                                <div class="quantity"></div>
-                                <div class="minus"></div>
-                            </div>
-                            <div class="btn_cont">
-                                <input type="button" value="В корзину" class="new_btn">
-                            </div>
                             <div class="WeHave">Имеется в наличии: {{$product->quantity}}</div>
+                            <div class="btn_cont">
+                            <input type="button" value="В корзину" class="new_btn">
+                            </div>
+
                         </div>
                         <div class="title_description">Описание</div>
                         <div class="description">{{$product->description}}</div>

@@ -5,10 +5,16 @@
     color: black;
 }
 body {
+    font-size: 24px;
+    font-family: Bellota_Bold;
   width: 1920px;
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+input {
+    font-size: 24px;
+    font-family: Bellota_Bold;
 }
 .reg_cont {
   width: 100vw;
@@ -26,4 +32,14 @@ body {
   font-family: Bellota_Bold;
   font-size: 32px;
   margin-top: 170px;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    background-color: #936652;
+}
+.category_cont{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
 }
