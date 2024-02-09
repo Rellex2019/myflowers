@@ -9,6 +9,8 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: #fcf4f0;
+    font-family: Bellota_Bold;
+    color: black;
 }
 
 .bascket {
@@ -19,13 +21,16 @@ body {
 }
 
 .bascket_block {
+    min-height: 600px;
   display: flex;
   flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .bascket_word {
   font-size: 60px;
   margin-top: 167px;
+    margin-left: 370px;
   margin-bottom: 9px;
 }
 
@@ -93,6 +98,15 @@ body {
   margin-right: 9px;
     border: none;
 }
+.none{
+    display: none;
+}
+.cont_names{
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    margin-top: 20px;
+}
 .count{
     text-align: center;
     width: 60px;
@@ -119,28 +133,33 @@ input::-webkit-inner-spin-button {
   margin-left: 9px;
   margin-right: 6px;
 }
-
-.popup{
-    margin-left: 700px;
-    margin-top: 58px;
+.cont_main{
+    position: relative;
+    margin-left: -300px;
+}
+.order_cont{
+    position: fixed;
+    width: 413px;
+    height: 227px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #E6DFD8;
+    top: 390px;
+    right: 0px;
+}
+.margin{
+    font-family: Bellota_Bold;
+    font-size: 30px;
+    width: 220px;
+    height: 125px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.order_btn{
+    width: 162px;
+    height: 45px;
     font-size: 24px;
-}
-
-.popup_body{
-  display: flex;
-}
-
-.popup1{
-  margin-right: 29px;
-}
-
-.popup_button{
-  border-radius: 10px;
-  font-size: 24px;
-  margin-left: 25px;
-  width: 162px;
-  height: 36px;
-  background-color: #e6dfd8;
-  border: 0;
-  margin-top: -5px;
+    background-color: #E5D3CB;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
 }

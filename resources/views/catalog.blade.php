@@ -143,9 +143,8 @@
                     <div class="new_text">{{$product->name}}</div>
                     <div class="new_price">{{$product->price}}</div>
                     <div class="btn_cont">
-                        @if(session('isRole')!='admin')
-                            <input type="button" value="В корзину" class="new_btn">
-                        @endif
+
+                            <a href="/basket/{{$product->id}}" ><input type="button" value="В корзину" class="new_btn"> </a>
                         @if(session('isRole')=='admin')
                             <style>
                             .new_btn{

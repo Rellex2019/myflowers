@@ -188,24 +188,31 @@
         <div class="bascket">
             <div class="bascket_block">
                 <div class="bascket_word">Корзина</div>
-                <div class="main_block">
-                    <img class="img_basket" src="/storage/img/5b6b549c9448b8751dc443ac5820c03e4b09c8f9r1-1541-1603v2_hq.jpg">
-                    <div class="description">Нежный розовый букет из хриыв авы аыаы ва ыва ыв аыа выаыв азантем и пионо ываы авы авыаы ваыва ыв авы аываывыаа ыаыва ыва ыаываыаыв аываывddddddddd</div>
+
+                @foreach($collection as $product_id)
+                    <div class="none"> {{$product = $products->find($product_id->product_id)}}</div>
+                <div class="cont_main">
+                    <div class="main_block">
+                    <img class="img_basket" src="{{$product->image}}">
+                    <div class="cont_names">
+                    <div class="name">{{$product->name}}</div>
+                    <div class="description">{{$product->description}}</div>
+                    </div>
                     <div class="cont_count">
                     <div class="bascket_button">
                         <button class="but">-</button>
-                        <input type="number" class="count" value="100" >
+                        <input type="number" class="count" value="{{$product->quantity}}" >
                         <button class="but1">+</button>
                     </div>
-                    <div class="price">6 250₽</div>
+                    <div class="price">{{$product->price}}Р</div>
+                    </div>
                     </div>
                 </div>
-
-                <div id="popup" class="popup">
-                    <div class="popup_body">
-                        <div class="popup1">Итог</div>
-                        <div class="popup2">38 300₽</div>
-                        <button class="popup_button">Заказать</button>
+                @endforeach
+                <div class="order_cont">
+                    <div class="margin">
+                    <div class="summa">Итог: </div>
+                    <button class="order_btn" type="submit">Заказать</button>
                     </div>
                 </div>
           </div>
