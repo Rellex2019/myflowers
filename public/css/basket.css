@@ -55,6 +55,7 @@ body {
 }
 
 .price {
+    margin-bottom: 180px;
   font-size: 32px;
   display: flex;
   align-items: center;
@@ -63,6 +64,7 @@ body {
 }
 
 .bascket_button {
+    margin-bottom: 180px;
   align-items: center;
   font-size: 21px;
   display: flex;
@@ -70,10 +72,14 @@ body {
     justify-content: center;
     height: 35px;
   width: 150px;
-    ф
     border: 1px solid black;
     border-radius: 10px;
-
+}
+.cont_count{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .but {
     display: flex;
