@@ -172,14 +172,14 @@
         </div>
         <div class="footer">
             <div class="col_foo">
-                <div class="row_foo">Где нас найти?</div>
-                <div class="row_foo">О нас</div>
-                <div class="row_foo">Каталог</div>
-                <div class="row_foo">Условия продажи</div>
+                <div class="row_foo"><a href="{{ route('whereplace.index') }}" >Где нас найти?</a></div>
+                <div class="row_foo"><a href="{{ route('about_us.index') }}"> О нас </a></div>
+                <div class="row_foo"><a href="{{ route('catalog.index') }}"> Каталог</a></div>
+                <div class="row_foo"><a href="https://www.consultant.ru/document/cons_doc_LAW_373622/0082fc02fd38782880841f0019209a807a218a2b/"> Условия продажи</a></div>
                 <div class="row_foo" id="svg_foo">
-                    <div class="svg_vk"></div>
-                    <div class="svg_youtube"></div>
-                    <div class="svg_telegram"></div>
+                    <a href="https://vk.com/"> <div class="svg_vk"></div></a>
+                    <a href="https://www.youtube.com/"> <div class="svg_youtube"></div></a>
+                    <a href="https://web.telegram.org/k/"> <div class="svg_telegram"></div></a>
                 </div>
             </div>
             <div class="col_foo">
@@ -217,9 +217,9 @@
                 </div>
             </div>
             <div class="col_foo">
-                <div class="row_foo3">Статьи</div>
-                <div class="row_foo3">Карта сайта</div>
-                <div class="row_foo3">Политика конфидециальности</div>
+                <div class="row_foo3"> <a href="https://makilove.ru/articles/#">Статьи</a></div>
+                <div class="row_foo3"><a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.proacton.ru%2Fimages%2Fabout-internet%2Fwebsites-promotion%2Fsitemap.jpg&tbnid=0g1SwNGWYrQy7M&vet=12ahUKEwidj57lnp-EAxXuDhAIHV67CFcQMygAegQIARBZ..i&imgrefurl=https%3A%2F%2Fwww.proacton.ru%2Fabout-internet%2Fwebsites-promotion%2Fsitemaps&docid=dKMemJ7W7pcbeM&w=714&h=654&q=%D0%BA%D0%B0%D1%80%D1%82%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0&ved=2ahUKEwidj57lnp-EAxXuDhAIHV67CFcQMygAegQIARBZ">Карта сайта</a></div>
+                <a href="https://policies.google.com/privacy?hl=ru"> <div class="row_foo3">Политика конфидециальности</div><a>
                 <div class="row_foo3">Способы оплаты</div>
                 <div class="row_foo3" id="svg_foo2">
                     <div class="svg_visa"></div>

@@ -61,12 +61,58 @@
                     </a>
                 </div>
                 <div class="icon_cont">
-                    <svg class="cart" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.40625 8.375C6.40625 7.2877 7.2877 6.40625 8.375 6.40625H12.0027C13.7427 6.40625 15.3333 7.38931 16.1114 8.94562L17.4668 11.6562H53.3633C55.8828 11.6562 57.4622 14.378 56.2122 16.5654L47.5901 31.654C46.7722 33.0854 45.2502 33.9688 43.6017 33.9688H23.9036L20.4297 39.5272C20.1565 39.9643 20.4707 40.5312 20.9862 40.5312H50.375C51.4623 40.5312 52.3438 41.4127 52.3438 42.5C52.3438 43.5873 51.4623 44.4688 50.375 44.4688H20.9862C17.3781 44.4688 15.1784 40.5 17.0907 37.4403L20.6379 31.7645L14.4361 14.3994L12.5896 10.7065C12.4785 10.4842 12.2512 10.3438 12.0027 10.3438H8.375C7.2877 10.3438 6.40625 9.4623 6.40625 8.375ZM19.0437 15.5938L24.1999 30.0312H43.6017C43.8372 30.0312 44.0545 29.905 44.1716 29.7005L52.2324 15.5938H19.0437ZM26.75 51.6875C26.75 53.862 24.9871 55.625 22.8125 55.625C20.6379 55.625 18.875 53.862 18.875 51.6875C18.875 49.513 20.6379 47.75 22.8125 47.75C24.9871 47.75 26.75 49.513 26.75 51.6875ZM46.4375 55.625C48.612 55.625 50.375 53.862 50.375 51.6875C50.375 49.513 48.612 47.75 46.4375 47.75C44.263 47.75 42.5 49.513 42.5 51.6875C42.5 53.862 44.263 55.625 46.4375 55.625Z" fill="#4C5430" />
-                    </svg>
-                    <svg class="user" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4687 18.875C23.4687 14.1633 27.2883 10.3438 31.9999 10.3438C36.7115 10.3438 40.5312 14.1633 40.5312 18.875C40.5312 23.5867 36.7115 27.4062 31.9999 27.4062C27.2883 27.4062 23.4687 23.5867 23.4687 18.875ZM31.9999 6.40625C25.1137 6.40625 19.5312 11.9887 19.5312 18.875C19.5312 25.7613 25.1137 31.3438 31.9999 31.3438C38.8863 31.3438 44.4687 25.7613 44.4687 18.875C44.4687 11.9887 38.8863 6.40625 31.9999 6.40625ZM17.0729 48.8063C19.6635 43.1452 25.3753 39.2188 31.9999 39.2188C38.6246 39.2188 44.3364 43.1452 46.927 48.8063C47.4725 49.9986 47.2247 51.0911 46.4358 51.9936C45.5972 52.9533 44.1442 53.6562 42.4999 53.6562H21.4999C19.8556 53.6562 18.4029 52.9533 17.564 51.9936C16.7753 51.0911 16.5273 49.9986 17.0729 48.8063ZM31.9999 35.2812C23.7786 35.2812 16.7004 40.158 13.4925 47.1678C12.2282 49.9306 12.9143 52.6569 14.5993 54.5847C16.2343 56.4553 18.795 57.5938 21.4999 57.5938H42.4999C45.205 57.5938 47.7657 56.4553 49.4005 54.5847C51.0858 52.6569 51.7717 49.9306 50.5075 47.1678C47.2995 40.158 40.2214 35.2812 31.9999 35.2812Z" fill="#4C5430" />
-                    </svg>
+
+                    @if(session('isRole')!= "")
+                        <style>
+                            .exit_btn{
+                                font-size: 40px;
+                                margin-left: 15px;
+                                font-family: Marck Script;
+                            }
+                            .icon_cont {
+                                margin-left: 15px;
+                                display: flex;
+                            }
+                        </style>
+                        <a href="{{route('basket.index')}}">
+                            <svg class="cart" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.40625 8.375C6.40625 7.2877 7.2877 6.40625 8.375 6.40625H12.0027C13.7427 6.40625 15.3333 7.38931 16.1114 8.94562L17.4668 11.6562H53.3633C55.8828 11.6562 57.4622 14.378 56.2122 16.5654L47.5901 31.654C46.7722 33.0854 45.2502 33.9688 43.6017 33.9688H23.9036L20.4297 39.5272C20.1565 39.9643 20.4707 40.5312 20.9862 40.5312H50.375C51.4623 40.5312 52.3438 41.4127 52.3438 42.5C52.3438 43.5873 51.4623 44.4688 50.375 44.4688H20.9862C17.3781 44.4688 15.1784 40.5 17.0907 37.4403L20.6379 31.7645L14.4361 14.3994L12.5896 10.7065C12.4785 10.4842 12.2512 10.3438 12.0027 10.3438H8.375C7.2877 10.3438 6.40625 9.4623 6.40625 8.375ZM19.0437 15.5938L24.1999 30.0312H43.6017C43.8372 30.0312 44.0545 29.905 44.1716 29.7005L52.2324 15.5938H19.0437ZM26.75 51.6875C26.75 53.862 24.9871 55.625 22.8125 55.625C20.6379 55.625 18.875 53.862 18.875 51.6875C18.875 49.513 20.6379 47.75 22.8125 47.75C24.9871 47.75 26.75 49.513 26.75 51.6875ZM46.4375 55.625C48.612 55.625 50.375 53.862 50.375 51.6875C50.375 49.513 48.612 47.75 46.4375 47.75C44.263 47.75 42.5 49.513 42.5 51.6875C42.5 53.862 44.263 55.625 46.4375 55.625Z" fill="#4C5430" />
+                            </svg>
+                        </a>
+                        @endif
+
+                        </svg>
+                        <a href="#popup" class="header_phone popup-link">
+                            <svg
+                                class="user"
+                                width="64"
+                                height="64"
+                                viewBox="0 0 64 64"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M23.4687 18.875C23.4687 14.1633 27.2883 10.3438 31.9999 10.3438C36.7115 10.3438 40.5312 14.1633 40.5312 18.875C40.5312 23.5867 36.7115 27.4062 31.9999 27.4062C27.2883 27.4062 23.4687 23.5867 23.4687 18.875ZM31.9999 6.40625C25.1137 6.40625 19.5312 11.9887 19.5312 18.875C19.5312 25.7613 25.1137 31.3438 31.9999 31.3438C38.8863 31.3438 44.4687 25.7613 44.4687 18.875C44.4687 11.9887 38.8863 6.40625 31.9999 6.40625ZM17.0729 48.8063C19.6635 43.1452 25.3753 39.2188 31.9999 39.2188C38.6246 39.2188 44.3364 43.1452 46.927 48.8063C47.4725 49.9986 47.2247 51.0911 46.4358 51.9936C45.5972 52.9533 44.1442 53.6562 42.4999 53.6562H21.4999C19.8556 53.6562 18.4029 52.9533 17.564 51.9936C16.7753 51.0911 16.5273 49.9986 17.0729 48.8063ZM31.9999 35.2812C23.7786 35.2812 16.7004 40.158 13.4925 47.1678C12.2282 49.9306 12.9143 52.6569 14.5993 54.5847C16.2343 56.4553 18.795 57.5938 21.4999 57.5938H42.4999C45.205 57.5938 47.7657 56.4553 49.4005 54.5847C51.0858 52.6569 51.7717 49.9306 50.5075 47.1678C47.2995 40.158 40.2214 35.2812 31.9999 35.2812Z"
+                                    fill="#4C5430" />
+                            </svg></a>
+                        <div id="popup" class="popup">
+                            <div class="popup_body">
+                                <div class="cont_log">
+                                    <a href="#" class="popupu_close"><img class="popupu_close" src="/elems/svg/krest.svg"}}></a>
+                                </div>
+                                @if(session('isRole')== "")
+                                    <a href="{{route('login.index')}}"><button class="login">Войти</button></a>
+                                    <a href="{{route('register.index')}}"><button class="sign_up">Регистрация</button></a>
+                                @endif
+                                @if(session('isRole')!= "")
+                                    <a href="{{route('login.logout')}}"><button class="exit_btn">Выход</button></a>
+                                @endif
+                                @if(session('isRole')== "admin")
+                                    <a href="{{route('admin.index')}}"><button class="exit_btn">Админ панель</button></a>
+                                @endif
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -102,14 +148,14 @@
         </div>
         <div class="footer">
             <div class="col_foo">
-                <div class="row_foo">Где нас найти?</div>
-                <div class="row_foo">О нас</div>
-                <div class="row_foo">Каталог</div>
-                <div class="row_foo">Условия продажи</div>
+                <div class="row_foo"><a href="{{ route('whereplace.index') }}" >Где нас найти?</a></div>
+                <div class="row_foo"><a href="{{ route('about_us.index') }}"> О нас </a></div>
+                <div class="row_foo"><a href="{{ route('catalog.index') }}"> Каталог</a></div>
+                <div class="row_foo"><a href="https://www.consultant.ru/document/cons_doc_LAW_373622/0082fc02fd38782880841f0019209a807a218a2b/"> Условия продажи</a></div>
                 <div class="row_foo" id="svg_foo">
-                    <div class="svg_vk"></div>
-                    <div class="svg_youtube"></div>
-                    <div class="svg_telegram"></div>
+                    <a href="https://vk.com/"> <div class="svg_vk"></div></a>
+                    <a href="https://www.youtube.com/"> <div class="svg_youtube"></div></a>
+                    <a href="https://web.telegram.org/k/"> <div class="svg_telegram"></div></a>
                 </div>
             </div>
             <div class="col_foo">
@@ -147,16 +193,16 @@
                 </div>
             </div>
             <div class="col_foo">
-                <div class="row_foo3">Статьи</div>
-                <div class="row_foo3">Карта сайта</div>
-                <div class="row_foo3">Политика конфидециальности</div>
-                <div class="row_foo3">Способы оплаты</div>
-                <div class="row_foo3" id="svg_foo2">
-                    <div class="svg_visa"></div>
-                    <div class="svg_mir"></div>
-                    <div class="svg_mastercard"></div>
-                    <div class="svg_sber"></div>
-                </div>
+                <div class="row_foo3"> <a href="https://makilove.ru/articles/#">Статьи</a></div>
+                <div class="row_foo3"><a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.proacton.ru%2Fimages%2Fabout-internet%2Fwebsites-promotion%2Fsitemap.jpg&tbnid=0g1SwNGWYrQy7M&vet=12ahUKEwidj57lnp-EAxXuDhAIHV67CFcQMygAegQIARBZ..i&imgrefurl=https%3A%2F%2Fwww.proacton.ru%2Fabout-internet%2Fwebsites-promotion%2Fsitemaps&docid=dKMemJ7W7pcbeM&w=714&h=654&q=%D0%BA%D0%B0%D1%80%D1%82%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0&ved=2ahUKEwidj57lnp-EAxXuDhAIHV67CFcQMygAegQIARBZ">Карта сайта</a></div>
+                <a href="https://policies.google.com/privacy?hl=ru"> <div class="row_foo3">Политика конфидециальности</div><a>
+                        <div class="row_foo3">Способы оплаты</div>
+                        <div class="row_foo3" id="svg_foo2">
+                            <div class="svg_visa"></div>
+                            <div class="svg_mir"></div>
+                            <div class="svg_mastercard"></div>
+                            <div class="svg_sber"></div>
+                        </div>
             </div>
         </div>
         <div class="corp">© 2023, ООО “Мир цветов”</div>
