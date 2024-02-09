@@ -39,6 +39,10 @@ Route::post('/registration/create', 'RegisterController@store')
 
 
 
+Route::get('/basket/', 'BasketController@show')
+    ->name('basket.index');
+
+
 Route::get('/catalog', 'CatalogController@show')
     ->name('catalog.index');
 Route::get('/catalog/{id_product}', 'CatalogController@show_one')

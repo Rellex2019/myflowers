@@ -14,14 +14,21 @@ class LoginController extends Controller
     }
     public function enter(LoginRequest $request)
     {
-        $all_users = User::all();
         $data = $request->validated();
-        foreach ($all_users as $user) {
-            if ($data['login'] == $user->login && $data['password'] == $user->password) {
-                session(['isRole' => $user->role, 'idUser'=>$user->id]);
+        $users = User::all();
+        $user = $users->where('login' ,$data['login'])->first();
+        if($user== null)
+        {
+            echo "<script type='text/javascript'>alert('Введенный вами пароль или логин неверный');</script>";
+            return redirect()->route('login.index');
+        }
+        else {
+            if ($user['password'] == $data['password']) {
+                session(['isRole' => $user->role, 'idUser' => $user->id]);
                 return redirect()->route('home.index');
             } else {
                 echo "<script type='text/javascript'>alert('Введенный вами пароль или логин неверный');</script>";
+                return redirect()->route('login.index');
             }
         }
     }
