@@ -74,19 +74,25 @@
 
         <div class="reg_text">Добавление товара</div>
 
-        <form action="{{route('add.product.store')}}" method="POST" enctype="multipart/form-data">
+        <form action="/admin/change" method="POST" enctype="multipart/form-data">
             @csrf
-            <input class="name_input" name="name" type="text" required placeholder="Введите название">
-            <input class="description_input" name="description" required type="textarea" placeholder="Введите описание">
-            <input class="price_input" name="price" type="number" required placeholder="Введите цену">
-            <input class="quantity_input" name="quantity" type="number" required placeholder="Введите количество имеющегося товара">
+            <input type="text" name="id" class="none" value="{{$products->id}}">
+            <style>
+                .none{
+                    display: none;
+                }
+            </style>
+            <input class="name_input" value="{{$products->name}}" name="name" type="text" required placeholder="Введите название">
+            <input class="description_input" value="{{$products->description}}" name="description" required type="textarea" placeholder="Введите описание">
+            <input class="price_input" value="{{$products->price}}" name="price" type="number" required placeholder="Введите цену">
+            <input class="quantity_input" value="{{$products->quantity}}" name="quantity" type="number" required placeholder="Введите количество имеющегося товара">
             <select name="category_id" required>
                 @foreach ($categories as $category )
                 <option value="{{$category->id}}">{{$category->name_category}}</option>
                 @endforeach
             </select>
             <input type="file" name="image" id="image_input" accept="image/png, image/jpeg" required>
-            <button class="add_product" type="submit">Добавить товар</button>
+            <button class="add_product" type="submit">Редактировать товар</button>
         </form>
     </div>
     <div class="footer_cont">

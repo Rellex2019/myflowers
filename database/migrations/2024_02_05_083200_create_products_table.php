@@ -24,7 +24,7 @@ return new class extends Migration
             $table->text('image');
             $table->unsignedBigInteger('category_id');
             $table->index('category_id', 'product_category_idx');
-            $table->foreign('category_id', 'product_category_fk')->on('categories')->references('id');
+            $table->foreign('category_id', 'product_category_fk')->on('categories')->references('id')->onDelete('cascade');
         });
     }
     /**

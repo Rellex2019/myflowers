@@ -154,8 +154,8 @@
                                 margin-right: 7px;
                             }
                             </style>
-                    <input type="button" value="Удалить" id="admin" class="new_btn">
-                    <input type="button" value="Редактировать" id="admin" class="new_btn">
+                    <a href="/admin/delete/{{$product->id}}"><input type="button" value="Удалить" id="admin" class="new_btn"></a>
+                    <a href="/admin/edit/{{$product->id}}"><input type="button" value="Редактировать" id="admin" class="new_btn">
                         @endif
                     </div>
                 </div>

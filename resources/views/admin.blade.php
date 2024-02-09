@@ -75,9 +75,10 @@
         <div class="reg_text">Админка</div>
 
         <a href="{{route('admin.add.product')}}"><input type="button" class="add_product" value="Добавить товар"></a>
-
+        <div class="text_offer">Изменение, удаление товаров</div>
         <a href="{{route('product.list')}}"><input type="button" class="add_product" value="Список товаров"></a>
-
+        <div class="text_offer">Добавление, удаление категорий</div>
+        <a href="{{route('product.list')}}"><input type="button" class="add_product" value="Список товаров"></a>
     </div>
     <div class="footer_cont">
         <div class="decor">

@@ -65,3 +65,10 @@ Route::post('/admin/add_product_base', 'AdminController@store')
 
 Route::get('/admin/product_list', 'AdminController@show_list')
     ->name('product.list');
+
+Route::get('/admin/delete/{id_product}', 'AdminController@delete')
+    ->name('product.delete');
+Route::get('/admin/edit/{id_product}', 'AdminController@edit')
+    ->name('product.edit');
+Route::post('/admin/change/', 'AdminController@change')
+    ->name('edit.product');
