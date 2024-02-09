@@ -40,6 +40,7 @@ class RegisterController extends Controller
                             'role' => "client",
                         ];
                         User::create($end_data);
+                        session(['isRole' => $user->role, 'idUser' => $user->id]);
                         return redirect()->route('about_us.index');
                     } else {
                         echo "<script type='text/javascript'>alert('Введенные вами пароли не совпадают');</script>";

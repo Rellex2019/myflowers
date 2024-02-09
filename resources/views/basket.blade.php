@@ -189,11 +189,12 @@
             <div class="bascket_block">
                 <div class="bascket_word">Корзина</div>
                 <div class="main_block">
-                    <img src="/png/Rectangle 83.png" alt="">
-                    <div class="description">Нежный розовый букет из хризантем и пионовидных роз</div>
+                    <img class="img_basket" src="/storage/img/5b6b549c9448b8751dc443ac5820c03e4b09c8f9r1-1541-1603v2_hq.jpg">
+
+                    <div class="description">Нежный розовый букет из хриыв авы аыаы ва ыва ыв аыа выаыв азантем и пионо ываы авы авыаы ваыва ыв авы аываывыаа ыаыва ыва ыаываыаыв аываывddddddddd</div>
                     <div class="bascket_button">
                         <button class="but">-</button>
-                        <div class="count">100</div>
+                        <input type="number" class="count" value="100" >
                         <button class="but1">+</button>
                     </div>
                     <div class="price">6 250₽</div>

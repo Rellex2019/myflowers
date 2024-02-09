@@ -39,20 +39,27 @@ body {
   margin-top: 47px;
   flex-direction: row;
 }
-
+.img_basket{
+    width: 310px;
+    height: 277px;
+    border-radius: 23px;
+    margin-top: 23px;
+    margin-right: 43px;
+    margin-left: 23px;
+}
 .description {
   font-size: 20px;
-  width: 404px;
+  width: 484px;
   margin-top: 48px;
-  margin-left: 43px;
+    margin-right: 20px;
 }
 
 .price {
   font-size: 32px;
   display: flex;
   align-items: center;
-  width: 100px;
-  margin-left: 110px;
+    justify-content: center;
+  width: 180px;
 }
 
 .bascket_button {
@@ -60,28 +67,50 @@ body {
   font-size: 21px;
   display: flex;
   flex-direction: row;
-  height: 35px;
-  width: 85px;
-  margin-top: 51px;
+    justify-content: center;
+    height: 35px;
+  width: 150px;
+    ф
+    border: 1px solid black;
+    border-radius: 10px;
+
 }
-
-.bascket {
-
-}
-
 .but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
   font-size: 20px;
   background: transparent;
-  border: none;
+    width: 14px;
   margin-left: 6px;
-  margin-right: 6px;
+  margin-right: 9px;
+    border: none;
 }
+.count{
+    text-align: center;
+    width: 60px;
+    height: 35px;
+    border: 1px solid black;
+    background-color:#e6dfd8 ;
+    font-size: 16px;
+    padding-left: 1px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+ }
 
 .but1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 14px;
   font-size: 20px;
   background: transparent;
   border: none;
-  margin-left: 6px;
+  margin-left: 9px;
   margin-right: 6px;
 }
 
