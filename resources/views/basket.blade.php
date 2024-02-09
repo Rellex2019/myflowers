@@ -200,26 +200,36 @@
                     </div>
                     <div class="cont_count">
                     <div class="bascket_button">
-                        <button class="but">-</button>
-                        <input type="number" class="count" value="{{$product->quantity}}" >
-                        <button class="but1">+</button>
+                        <button class="but" id="btn_minus">-</button>
+                        <input type="number" class="count" id="quantity" value="{{$product_id->quantity}}" >
+                        <button class="but1" id="btn_plus">+</button>
                     </div>
-                    <div class="price">{{$product->price}}Р</div>
+                    <div class="price" id="price">{{$product->price}}Р</div>
                     </div>
                     </div>
                 </div>
                 @endforeach
+
                 <div class="order_cont">
                     <div class="margin">
-                    <div class="summa">Итог: </div>
+                    <div class="summa" id="summa">Итог: </div>
                     <button class="order_btn" type="submit">Заказать</button>
                     </div>
                 </div>
           </div>
         </div>
+        <script>
+            let price = document.querySelector('#price').innerHTML.slice(0,-1);
+            let quantity = document.querySelector('#quantity').value;
+            let minus = document.querySelector('#btn_minus');
+            let plus = document.querySelector('#btn_plus');
+            let summa = document.querySelector('#summa').innerHTML;
+            minus.addEventListener('click', function (){
 
-
-
+                return quantity=Number(quantity)- 1;
+            })
+            alert(summa);
+        </script>
         <div class="footer_cont">
             <div class="decor">
               <img src="/elems/list1.png" class="list1_foo" />
