@@ -218,18 +218,6 @@
                 </div>
           </div>
         </div>
-        <script>
-            let price = document.querySelector('#price').innerHTML.slice(0,-1);
-            let quantity = document.querySelector('#quantity').value;
-            let minus = document.querySelector('#btn_minus');
-            let plus = document.querySelector('#btn_plus');
-            let summa = document.querySelector('#summa').innerHTML;
-            minus.addEventListener('click', function (){
-
-                return quantity=Number(quantity)- 1;
-            })
-            alert(summa);
-        </script>
         <div class="footer_cont">
             <div class="decor">
               <img src="/elems/list1.png" class="list1_foo" />
